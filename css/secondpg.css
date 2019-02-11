@@ -7,7 +7,7 @@ body {
     margin: auto;
 }
 
-.page-navigation {
+.navbar-expand-lg {
     background-color: #93d808;
     padding: 10px;
 }
@@ -23,26 +23,27 @@ header .logo {
     margin: 0 auto;
     font-weight: bold;
     color: #efe115;
+    list-style-type: none;
 }
 
-header .menu {
+header .navbar-nav {
     display: flex;
     justify-content: space-around;
     padding: 0;
     margin: 0;
 }
 
-header .menu li {
+header .navbar-nav {
     list-style-type: none;
 }
 
-header .menu li a {
+header .navbar-nav a {
     text-decoration: none;
     text-transform: uppercase;
     color: var(--page-color);
 }
 
-header .menu li a:hover {
+header .navbar-nav a:hover {
     text-decoration: underline;
     color: #e8f925;
     font-weight: bold;
@@ -76,13 +77,15 @@ header .banner {
     color: #e8f925;
     font-size: x-large;
     font-style: italic;
-    padding-left: 5%
+    padding-left: 5%;
+    margin: 16px;
 }
 
 .header-phone {
     font-size: large;
     padding-left: 5%;
     font-weight: bold;
+    margin: 16px;
 }
 
 @media (min-width: 600px) {
@@ -118,18 +121,27 @@ select[name=massage] {
   }
   .contac-form {
     grid-column-start: 2;
-    grid-row-start: 9;
+    grid-row-start:11;
     grid-row-end: 6;
   }
 
 input[type=submit] {
     margin: 0 0 10px 0;
+    padding: 0.4rem 1.3rem;
+    justify-self: center;
+    align-self: flex-end;
+    background-color: #f3d448;
+    color: #232325;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    border-color: #f3d448;
+    border-radius: 4px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
     .contac-form {
         grid-column-start: 3;
-        grid-row-start: 9;
+        grid-row-start: 11;
         grid-row-end: 6;
       }
 }

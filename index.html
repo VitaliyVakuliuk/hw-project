@@ -5,21 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Масажний салон «ГРАН-ПРІ»</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel = "stylesheet" type="text/css" href="css\index.css">
 
 </head>
 <body>
         <header id="home">
-            <nav class="page-navigation">
-                <p class ="logo">Масажний салон «ГРАН-ПРІ»</p>
-                <ul class="menu">
-                    <li><a href = "#home">Головна</a></li>
-                    <li><a href = "#aboutus">Про&nbspнас</a></li>
-                    <li><a href = "#typesofmassage">Масажі</a></li>
-                    <li><a href = "#contactme">Контакти</a></li>
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="logo" href="#">Масажний салон «ГРАН-ПРІ</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#home">Головна <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#aboutus">Про&nbspнас</a>
+                    <a class="nav-item nav-link" href="#typesofmassage">Масажі</a>
+                    <a class="nav-item nav-link" href="#contactme">Контакти</a>
+                  </div>
+                </div>
+              </nav>
             <div class="banner">
                 <div class="header-slogan">
                     <h1>Тіло відпочиває у наших <br> масажних кабінетах!</h1>
@@ -51,7 +58,7 @@
                 <div class="collection-item-outher">
                     <div class="collection-item">
                         <div class="collection-item-jmg">
-                            <img src="img/massazh-dis.jpg" alt="Загальний масаж" id="disposable">
+                            <img src="img/massazh-dis.jpg" alt="massage" id="disposable">
                             <h3>Розслабляючий масаж</h3>
                         </div>
                         <div class="collection-text">
@@ -206,12 +213,12 @@
                 <div class="contac-form">
                     <form class="login" method="POST" action="https://formspree.io/vitaliyvak@gmail.com" target="_blank">
                         <label>
-                        Ваше ім'я: <input type="text" name="name" placeholder="Ваше ім'я" required><br>
+                         <input type="text" name="name" placeholder="Ваше ім'я" required><br>
                         </label>
                         <label>
-                        Email адреса <input type="email" name="email" placeholder="Email адреса" required><br>
+                         <input type="email" name="email" placeholder="Email адреса" required><br>
                         </label>
-                        <label for="message"> Повідомлення</label>
+                        <label for="message"></label>
                         <textarea name="message" placeholder="Повідомлення" id="message" rows="15"></textarea><br>
                         <input type="submit" name="submit" value="Відправити">
                     </form>
@@ -265,6 +272,6 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" 
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" 
         crossorigin="anonymous"></script>
-        <script src="f:\Робота\Док IT\SoftServe\js\index.js"></script>
+        <script src="js\index.js"></script>
     </body>
 </html>
